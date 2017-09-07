@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <center>
+    <h1><%= @turist.name %></h1>
+    <img src="<%= @turist.image %>" alt="Welcome Turist">
+  </center>
+  <h3>Crust: <%= @turist.crust %></h3>  
+  <h3>Sauce: <%= @turist.sauce %></h3>
+  <h3>Toppings: <%= @turist.toppings %></h3>
+  <h3>Cost: <%= @turist.cost %></h3>
+</div>
+
+<%= link_to 'Edit', edit_turist_path(@turist) %> |
+<%= link_to 'Back', turists_path %>
+
+
+<%= link_to 'Edit', edit_turist_path(@turist) %> |
+<%= link_to 'Back', turists_path %>

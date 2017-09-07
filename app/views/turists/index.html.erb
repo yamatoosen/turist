@@ -1,0 +1,19 @@
+<h1>Turismo en Chile</h1>
+<div class="row">
+  <% @turists.each do |turists| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= turists.image %>" alt="Turismo en Chile">
+      <div class="caption">
+        <h3><%= turists.name %></h3>
+        <h3>Cost: <%= turists.cost %></h3>
+        <%= link_to "More Info", turists, class: "btn btn-default" %>        
+      </div>
+    </div>    
+  </div>  
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to "Nuevo Turismo", new_turist_path, class: "btn btn-default" %>
